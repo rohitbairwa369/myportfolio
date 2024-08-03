@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primeicons@7.0.0/primeicons.min.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar p-4">
+            <li onclick=hideSidebar()><a><i class="pi pi-times"></i></a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="https://www.linkedin.com/in/rohit-bairwa-3257a4188/" target="_blank">Linkedin</a></li>
+            <li><a href="https://github.com/rohitbairwa369" target="_blank">Github</a></li>
+        </ul>
+        <ul>
+            <li><a>RRB</a></li>
+            <li class="hideOnMobile"><a href="/"> <i class="pi pi-home mr-2"></i>Home</a></li>
+            <li class="hideOnMobile"><a href="https://www.linkedin.com/in/rohit-bairwa-3257a4188/" target="_blank"> 
+            <i class="pi pi-linkedin mr-2"></i>Linkedin</a></li>
+            <li class="hideOnMobile"><a href="https://github.com/rohitbairwa369" target="_blank"><i class="pi pi-github mr-2"></i>Github</a></li>
+            <li class="menu-button" onclick=showSidebar()><a><i class="pi pi-bars" style="font-size: 1.5rem"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <section id="hero" class="p-4">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+        <div class="text-center w-full text-white mt-3">
+
+            <h1>Hello! This is <span class="text-6xl text-purple-400">Rohit</span> Bairwa </h1>
+            <p class="intro px-2 mt-3">I am a Software Engineer based in <span
+                    class="text-xl font-bold text-cyan-400">Pune</span>, Maharashtra. I am a leader & i love
+                problem-solving. I have <span class="text-xl font-bold text-cyan-400">2 years</span> of experience as a
+                <span class="text-xl font-bold text-cyan-400">Frontend developer</span></p>
+
+            <button
+                class="bg-black-alpha-10 border-200 text-white mt-5 px-3 py-2 text-base border-1 border-solid border-round cursor-pointer transition-all transition-duration-200 hover:bg-purple-900 active:bg-purple-700 hoverEffect">Contact
+                Me <i class="pi pi-phone ml-2"></i></button>
+            <div class="video-section">
+                <video class="" width="100%" playsinline loop muted autoplay>
+                    <source src="https://reflect.app/home/build/q-c3d7becf.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="timeline">
+        <div id="content" class="text-white">
+            <h1>My Experience</h1>
+
+            <ul class="timeline mt-5 list-disc">
+                <li class="event" data-date="12:30 - 1:00pm">
+                    <div class="flex justify-content-between">
+                    <h3>12th Wonder <a href="https://12thwonder.com/" target="_blank"><i class="pi pi-link cursor-pointer text-sm"></i></a></h3>
+                    <div>Apr 23 - <span class="text-purple-400">Present</span></div>
+                    </div>
+                    <span>Associate Software Engineer</span>
+                    <div class="p-3">
+                        <p><span class="text-xl font-bold text-cyan-400">Titan : </span>(Test Lifecycle Management) is the tool which helps to do Process Standardization, Resource Optimization, Collaboration & Simplified Data Management in end-to-end Test Process.</p>
+                        <p>Worked On: Angular 16 ,Typescript, PrimeNg , Primeflex ,SCSS</p>
+                    </div>
+                    <div class="p-3">
+                    <p><span class="text-xl font-bold text-cyan-400">Sustainium : </span>Provides an end-to-end carbon accounting platform that helps businesses measure and track their GHG Scope 1, 2 & 3 emissions and share your decarbonization progress.</p>
+                    <p>Worked On: ABP Framework , Html,Css , Javascript , jquery ,ajax ,python ,figma</p>
+                    </div>
+                    <div class="p-3">
+                    <p><span class="text-xl font-bold text-cyan-400">The JP Logistic / Dean Japan / Eight Gold Cars : </span>All these are a Japanese car dealer pioneering a major role in the Japanese vehicle export industry providing all kinds of vehicles to individual buyers, dealers, industries and other organizations.</p>
+                    <p>Worked On: Cakephp 2, php, Mysql , Python , S3 & Lambda(aws)</p>
+                    </div>
+                </li>
+                <li class="event" data-date="2:30 - 4:00pm">
+                    <div class="flex justify-content-between">
+                        <h3>Deepthought <a href="https://deepthought.education/" target="_blank"><i class="pi pi-link cursor-pointer text-sm"></i></a></h3>
+                        <div>Sep 22 - Feb 23</div>
+                    </div>
+                    <span>Intern</span>
+                    <div class="p-3">
+                        <p><span class="text-xl font-bold text-cyan-400">College Website Data Scrapper : </span>
+                            Python script to scrape the contact details of a training and placement cell.
+                        </p>
+                        <p>Worked On: Python , Requests , BeautifulSoup ,Pandas </p>
+                    </div>
+                    <div class="p-3">
+                        <p><span class="text-xl font-bold text-cyan-400">Community Builder :</span>
+                            Python script to scrape the contact details of a training and placement cell.
+                        </p>
+                        <p>Worked On: Python , Requests , BeautifulSoup ,Pandas </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <div class="text-center mt-5 mb-5 text-white mt-7"><h1>My Skills</h1></div>
+    <section id="skillset" class="flex justify-content-center gap-7 flex-wrap">
+        <div class="parent-skill">
+            <div class="skill">
+                <div class="progress" data-progress="99">
+                    <span class="progress-number">0%</span>
+                </div>
+            </div>
+            <span class="title">HTML</span>
+        </div>
+        <div class="parent-skill">
+            <div class="skill">
+                <div class="progress" data-progress="99">
+                    <span class="progress-number">0%</span>
+                </div>
+            </div>
+            <span class="title">CSS</span>
+        </div>
+        <div class="parent-skill">
+            <div class="skill">
+                <div class="progress" data-progress="95">
+                    <span class="progress-number">0%</span>
+                </div>
+            </div>
+            <span class="title">Javascript</span>
+        </div>
+        <div class="parent-skill">
+            <div class="skill">
+                <div class="progress" data-progress="95">
+                    <span class="progress-number">0%</span>
+                </div>
+            </div>
+            <span class="title">Typescript</span>
+        </div>
+        <div class="parent-skill">
+            <div class="skill">
+                <div class="progress" data-progress="98">
+                    <span class="progress-number">0%</span>
+                </div>
+            </div>
+            <span class="title">JQuery</span>
+        </div>
+        <div class="parent-skill">
+            <div class="skill">
+                <div class="progress" data-progress="90">
+                    <span class="progress-number">0%</span>
+                </div>
+            </div>
+            <span class="title">Angular 17</span>
+        </div>
+        <div class="parent-skill">
+            <div class="skill">
+                <div class="progress" data-progress="90">
+                    <span class="progress-number">0%</span>
+                </div>
+            </div>
+            <span class="title">Rxjs</span>
+        </div>
+        <div class="parent-skill">
+            <div class="skill">
+                <div class="progress" data-progress="70">
+                    <span class="progress-number">0%</span>
+                </div>
+            </div>
+            <span class="title">Node Js</span>
+        </div>
+        <div class="parent-skill">
+            <div class="skill">
+                <div class="progress" data-progress="99">
+                    <span class="progress-number">0%</span>
+                </div>
+            </div>
+            <span class="title">Python</span>
+        </div>
+        <div class="parent-skill">
+            <div class="skill">
+                <div class="progress" data-progress="99">
+                    <span class="progress-number">0%</span>
+                </div>
+            </div>
+            <span class="title">S3 + Lambda</span>
+        </div>
+        <div class="parent-skill">
+            <div class="skill">
+                <div class="progress" data-progress="80">
+                    <span class="progress-number">0%</span>
+                </div>
+            </div>
+            <span class="title">Cakephp 2</span>
+        </div>
+        <div class="parent-skill">
+            <div class="skill">
+                <div class="progress" data-progress="99">
+                    <span class="progress-number">0%</span>
+                </div>
+            </div>
+            <span class="title">Github</span>
+        </div>
+        <div class="parent-skill">
+            <div class="skill">
+                <div class="progress" data-progress="80">
+                    <span class="progress-number">0%</span>
+                </div>
+            </div>
+            <span class="title">Figma</span>
+        </div>
+    </section>
+
+    <section id="timeline" class="mt-8">
+        <div id="content" class="text-white">
+            <h1>My Education</h1>
+
+            <ul class="timeline mt-5 list-disc">
+                <li class="event" data-date="12:30 - 1:00pm">
+                    <div class="flex justify-content-between">
+                    <h3>BSC Computer Science</h3>
+                    <span>2022</span>
+                    </div>
+                    <span>Nowrosjee Wadia College</span>
+                    <p>CGPA : 8.5/10</p>
+                </li>
+                <li class="event mt-4" data-date="2:30 - 4:00pm">
+                    <div class="flex justify-content-between">
+                        <h3>12th HSC</h3>
+                        <div>2019</div>
+                    </div>
+                    <span>GH Raisoni College</span>
+                    <p>Percentage : 58%</p>
+                </li>
+                <li class="event mt-4" data-date="2:30 - 4:00pm">
+                    <div class="flex justify-content-between">
+                        <h3>10th SSC</h3>
+                        <div>2017</div>
+                    </div>
+                    <span>Wagheshwar English Medium School</span>
+                    <p>Percentage : 80%</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="relative overflow-hidden">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+        <div class="p-4 text-white">
+            <h1 class="text-center text-purple-400">Hire Me</h1>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="db9a7f82-30ee-4287-bb55-afdef2ede9ca">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit"
+                        class="bg-black-alpha-10 border-200 text-white px-3 py-2 text-base border-1 border-solid border-round cursor-pointer transition-all transition-duration-200 hover:bg-purple-900 hover:border-purple-900 active:bg-primary-700">Submit</button>
+                </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
