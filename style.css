@@ -243,7 +243,7 @@ nav li:first-child{
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  z-index: 2;
+  z-index: 3;
   backdrop-filter: blur(20px);
 }
 
@@ -571,4 +571,58 @@ form{
 form{
     margin:1rem 0.1rem;
 }
+}
+
+strong{
+  color: var(--green-500);
+}
+
+.project-slider {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider-container {
+  position: relative;
+}
+
+.slider-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
+
+.slider-prev, .slider-next {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.slider-prev {
+  left: 0;
+}
+
+.slider-next {
+  right: 0;
+}
+
+.slider-prev:hover, .slider-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }

@@ -87,3 +87,28 @@ function changebody() {
     document.getElementById('videoplayer').load();
 }
 
+
+
+let slideIndex = 0;
+
+function showSlide(index) {
+    const slides = document.querySelector('.slider-slides');
+    const totalSlides = document.querySelectorAll('.slider-slide').length;
+
+    if (index >= totalSlides) {
+        slideIndex = 0;
+    } else if (index < 0) {
+        slideIndex = totalSlides - 1;
+    } else {
+        slideIndex = index;
+    }
+
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
+function moveSlide(step) {
+    showSlide(slideIndex + step);
+}
+
+// Initialize the slider
+showSlide(slideIndex);
